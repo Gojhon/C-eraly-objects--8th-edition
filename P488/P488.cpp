@@ -41,7 +41,7 @@ void placeCursor(HANDLE screen, int row , int col)
 void displayPrompts(HANDLE screen)
 {
 	placeCursor(screen, 3, 25);
-	std::cout << "******* Data Entry Form *******" << std::endl;
+	std::cout << "******* Data Entry Form *******"<< std::endl;
 	placeCursor(screen, 5, 25);
 	std::cout << "    " << std::endl;
 	placeCursor(screen, 7, 25);

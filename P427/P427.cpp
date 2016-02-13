@@ -15,11 +15,13 @@ public:
 	double calcSaleTotal(double cost);
 };
 
-Sale::Sale(double rate):taxRate(rate)
+Sale::Sale(double rate) :taxRate(rate)
 {
+
 }
-Sale::Sale():taxRate(0.0)
+Sale::Sale() : taxRate(0.0)
 {
+
 }
 
 double Sale::calcSaleTotal(double cost)
@@ -41,7 +43,6 @@ int main()
 	std::cout << "of the $24.95 sale is, of course $";
 	std::cout << cashier2.calcSaleTotal(24.95) << std::endl;
 
-
-    return 0;
+	return 0;
 }
 
