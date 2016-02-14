@@ -43,9 +43,9 @@ void displayPrompts(HANDLE screen)
 	placeCursor(screen, 3, 25);
 	std::cout << "******* Data Entry Form *******"<< std::endl;
 	placeCursor(screen, 5, 25);
-	std::cout << "    " << std::endl;
+	std::cout << "           " << std::endl;
 	placeCursor(screen, 7, 25);
-	std::cout << "           Gender(M/f): " << std::endl;
+	std::cout << "                    Gender(M/f): " << std::endl;
 }
 
 void getUserInput(HANDLE screen, UserInfo &input)

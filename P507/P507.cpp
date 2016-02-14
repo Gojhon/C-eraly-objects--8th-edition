@@ -8,12 +8,11 @@ int main()
 {
 	const int NUM_EMPLOYEES = 6;
 	int hours[NUM_EMPLOYEES];
-	std::cin >> hours[0];
-	std::cin >> hours[1];
-	std::cin >> hours[2];
-	std::cin >> hours[3];
-	std::cin >> hours[4];
-	std::cin >> hours[5];
+	std::cout << "Enter the hous worked by : ";
+	for (auto&&item : hours)
+	{
+		std::cin >> item;
+	}
 	
 	std::cout << "The hours you entered are: ";
 	std::cout << " " << hours[0];
