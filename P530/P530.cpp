@@ -17,9 +17,10 @@ int main()
 
 	std::getline(std::cin, sentence);
 
-	for (int pos = 0; pos < sentence.length(); pos++)
+	//for (int pos = 0; pos < sentence.length(); pos++)
+	for(auto ch:sentence)//for range TS
 	{
-		ch = toupper(sentence[pos]);
+		ch = toupper(ch);
 
 		switch (ch)
 		{

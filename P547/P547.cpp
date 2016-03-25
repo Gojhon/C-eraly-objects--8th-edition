@@ -11,9 +11,17 @@ int main()
 	const int NUM_DIVS = 3; //int형 상수 NUM_DIVS에 3을 입력한다.(단,값은 변하지 안는다/고정된다)
 	const int NUM_QTRS = 4; //int형 상수 NUM_QTRS에 4을 입력한다.(단,값은 변하지 안는다/고정된다)
 
-	double sales[NUM_DIVS][NUM_QTRS]; // double형의 2차원 배열을 생성한다 3x4
+	double sales[NUM_DIVS][NUM_QTRS]; // double형의 2차원 배열을 생성한다 3x4 
+	/*차원은 거꾸록 간다
+	1234
+	1234
+	1234
+  4/3
+	*/
 	double totalSales = 0;
 	int div, qtr;
+
+	
 	
 	std::ifstream datafile; //파일입출력을 할 수 있는 datafile변수를 생성한다.
 

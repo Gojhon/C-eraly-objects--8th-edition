@@ -10,8 +10,8 @@ int main()
 	const int Array_size = 8;
 	int collection[Array_size] = { 5,10,15,20,25,30,35,40 };
 
-	for (int index = 0; index < Array_size; index++)
-		showValue(collection[index]);
+	for (auto&& value: collection)
+		showValue(value);
 	std::cout << std::endl;
 	return 0;
 }

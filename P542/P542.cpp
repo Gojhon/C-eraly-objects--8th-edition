@@ -3,8 +3,9 @@
 
 #include "stdafx.h"
 #include<iostream>
+#include<algorithm>
 #include<iomanip>
-
+#include <numeric>   
 double sumArray(const double[], int);
 double getHighest(const double[], int);
 double getLowest(const double[], int);
@@ -27,6 +28,8 @@ int main()
 	
 	highest = getHighest(sales, Num_Days);
 	lowest = getLowest(sales, Num_Days);
+	std::cout << "sum:" << std::accumulate(std::begin(sales), std::end(sales), 0.0)<<std::endl;
+	std::cout << "max_element:" << std::max_element(std::begin(sales),std::end(sales))<<std::endl;
 
 	std::cout << std::fixed << std::showpoint << std::setprecision(2) << std::endl;
 	std::cout << "The total sales are  $" << std::setw(9) << total << std::endl;

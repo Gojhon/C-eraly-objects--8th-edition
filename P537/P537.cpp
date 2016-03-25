@@ -3,21 +3,23 @@
 
 #include "stdafx.h"
 #include<iostream>
-
-void showValues(int intArrayp[], int size);
+template<typename T, std::size_t n>
+void showValues(int intArrayp[]);
 int main()
 {
 	const int Array_size = 8;
 	int collection[Array_size] = { 5,10,15,20,25,30,35,40 };
+	//decay
+
 	std::cout << "The array contains the values" << std::endl;
-	showValues(collection, Array_size);
+	showValues(collection);
 
     return 0;
 }
-void showValues(int nums[], int size)
+template<typename T, std::size_t n>
+void showValues(T (&nums)[n])//decay->*int
 {
-	for (int index = 0; index < size; index++)
-		std::cout << nums[index] << " ";
+	for(auto&& item :: nums)
 	std::cout <<std::endl;
 
 }
