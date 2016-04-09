@@ -7,11 +7,11 @@
 
 int main()
 {
-	std::string greeting;
-	std::string name("william Smith");
+	std::string greeting; //문자열 변수 greeting을만든다.
+	std::string name("william Smith");//문자열 변수 name을 만들고william Smith을 할당한다. .
 
-	greeting = "Hello ";
-	std::cout << greeting << name << std::endl;
+	greeting = "Hello ";//문자열 변수 greeting에 hello를 할당한다.
+	std::cout << greeting << name << std::endl; //출력한다.
 
     return 0;
 }
