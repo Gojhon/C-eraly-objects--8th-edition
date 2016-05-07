@@ -7,7 +7,7 @@
 
 int main()
 {
-	const int LENGTH = 80;
+	const int LENGTH = 80; //core constant
 	char line[LENGTH];
 
 	std::cout << "Enter a sentence of no more than "

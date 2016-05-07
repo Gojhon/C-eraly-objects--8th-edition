@@ -16,6 +16,8 @@ int main()
 	//bufferSize NAME_LENGTH만큼 키보드에 입력받고 pname에할당한다.
 	std::cout << "Hello " << pname;
 	//Hello pname출력
+
+	delete[] pname;
     return 0;
 }
 

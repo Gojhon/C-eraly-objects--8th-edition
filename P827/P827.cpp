@@ -19,7 +19,7 @@ int main()
 std::string dollarFormat(std::string original)
 {
 	std::string formatted = original;
-	int dp = formatted.find('.');
+	int dp = formatted.find(".");
 	int pos = dp;
 	while (pos > 3)
 	{

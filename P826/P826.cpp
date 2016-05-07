@@ -13,6 +13,13 @@ int main()
 	MyString name3("Joe");
 	MyString string1("ABC"), string2("DEF");
 
+	std::cout << "name1: " << name1.data() << std::endl;
+	std::cout << "name2: " << name2.data() << std::endl;
+	std::cout << "name3: " << name3.data() << std::endl;
+
+	std::cout << "string1: "<<string1.data() << std::endl;
+	std::cout << "string2: " << string2.data() << std::endl;
+
 	if (name1 == name2)
 		std::cout << "name1 is equal to name2." << std::endl;
 	else

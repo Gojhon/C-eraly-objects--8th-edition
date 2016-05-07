@@ -20,7 +20,7 @@ int main()
 	file >> input;
 	while (!file.fail())
 	{
-		std::cout << input;
+		std::cout << input<<" ";
 		file >> input;
 	}
 	file.close();
