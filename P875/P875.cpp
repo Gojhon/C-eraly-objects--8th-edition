@@ -22,12 +22,12 @@ int main()
 	do
 	{
 		std::cout << "Currently at position "
-			<< file.tellg() << std::endl;//tellg함수는 현재의 위치를 반환합니다.
+			<< file.tellg() << std::endl;//tellg함수는 현재의 읽기 위치를 반환합니다.
 		std::cout << "Enter an offset from the" <<
 			"beginning of the file: ";
 		std::cin >> offset; //숫자를 입력 받는다.
-		file.seekg(offset, std::ios::beg); //입력받은 숫자부터 스트림을 시작한다.
-		file.get(ch);
+		file.seekg(offset, std::ios::beg); //시작 지점에서 읽을 숫자의 위치를 설정
+		file.get(ch); //문자를 읽는다.
 		std::cout << "Character read:" << ch << std::endl;//문자를 출력한다.
 		std::cout << "Do it again? ";
 		std::cin >> response; //
