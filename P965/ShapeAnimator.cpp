@@ -97,4 +97,4 @@ void ComplexShape::setDirection(int dRow, int dCol)
 	Shape::setDirection(dRow, dCol);
 	for (int k = 0; k < shapes.size(); k++)
 		shapes[k]->setDirection(dRow, dCol);
-}v 
+}
