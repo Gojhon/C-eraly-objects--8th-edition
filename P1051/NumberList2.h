@@ -18,13 +18,13 @@ protected:
 	};
 	ListNode *head;
 public:
-	NumberList2() { head = NULL; }
-	~NumberList2();
-	void add(double value)
+	NumberList2() { head = NULL; } //생성자
+	~NumberList2(); //소멸자
+	void add(double value) //입력된 값을 추가
 	{
 		head = add(head, value);
 	}
-	void remove(double value)
+	void remove(double value) //입력된 값을 삭제
 	{
 		head = remove(head, value);
 	}
