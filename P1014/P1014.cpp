@@ -11,7 +11,7 @@ void sort(char str[], int size, std::vector<int>& transpositions);
 
 int main()
 {
-	char str1[] = "spot";
+	char str1[] = "z";
 	char str1Copy[] = "spot";
 	char str2[] = "stop";
 

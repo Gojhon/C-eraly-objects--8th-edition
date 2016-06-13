@@ -10,7 +10,7 @@ struct ListNode
 
 };
 
-int main()
+int main() 
 {
 	ListNode * head;
 

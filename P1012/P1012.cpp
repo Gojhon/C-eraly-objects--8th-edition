@@ -11,20 +11,20 @@ void doubleValue(int &);
 int main()
 {
 	std::vector<int> numbers;  //int형 vector numbers를 생성
-	std::vector<int>::iterator iter; //iterator(반복자) 생성
+	numbers.reserve(10);
 
+	std::vector<int>::iterator iter; //iterator(반복자) 생성
+	
 	for (int x = 0; x < 10; x++)
 	{
 		numbers.push_back(x); //numbers에 0 ~ 9 까지의 값을 넣는다.
 	}
 
 	std::cout << " The numbers in the Vector are : " << std::endl;
-	for (iter = numbers.begin(); iter != numbers.end(); iter++) 
-		/*
-		반복자iter에 numbers에 시작값을 넣고 iter값이 numbers의 
-		마지막값과 동일하기 전까지 반복문을 이 돌아간다.
-		*/
-		std::cout << *iter << " "; //0 부터 9 까지의 값을 출력한다.
+	for (auto i : numbers)
+	{
+		std::cout << i << " ";
+	}
 	std::cout << std::endl;
 	//for이 종료 되면 한칸을 띈다.
 
@@ -35,8 +35,10 @@ int main()
 	//numbers 값에 *2를 한다.
 	std::cout << "Not the numbers in the vector are : " << std::endl;
 	
-	for (iter = numbers.begin(); iter != numbers.end(); iter++)
-		std::cout << *iter << " ";//값을 출력한다.
+	for (auto i : numbers)
+	{
+		std::cout << i << " ";
+	}//값을 출력한다.
 	std::cout << std::endl;
     return 0;
 }
