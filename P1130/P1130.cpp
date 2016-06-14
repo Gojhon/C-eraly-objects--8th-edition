@@ -78,7 +78,7 @@ std::ostream & operator<<(std::ostream &out, Person p)
 		out << "   <Parents> " << " ";
 	for (int k = 0; k < p.parents.size(); k++)
 	{
-		out << "  <children> " << " ";
+		out <<p.parents[k]->name << " ";
 	}
 	if (p.parents.size()>0)
 		out << " </parents> " << std::endl;
@@ -96,7 +96,7 @@ std::ostream & operator<<(std::ostream &out, Person p)
 int main()
 {
 	Person adam("Adam", male);
-	Person eve("eve", femali);
+	Person eve("Eve", femali);
 	Person joan("joan", femali);
 
 	Person *pAbel = eve.addChild(new Person("Abel", male));
